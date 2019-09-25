@@ -4,8 +4,13 @@
   <body>
     Redirecting
     <script type="text/javascript">
+      function redirect() {
+        setTimeout(function(){
+          window.location = "intent://naman/#Intent;scheme=myapp;package=com.example.myapplication;end"
+        },4000)
+      }
       (function(){
-      window.location = "intent://naman/#Intent;scheme=myapp;package=com.example.myapplication;end"
+        redirect();
       })()
     </script>
   </body>
